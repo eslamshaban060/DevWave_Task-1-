@@ -1,0 +1,269 @@
+/*   global styles  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+ul,
+ol {
+  list-style: none;
+}
+:root {
+  --g: #0b9586;
+  --w: #fff;
+  --b: #000;
+  --o: #ffbb1c;
+  --h: #2a3334;
+}
+.continer {
+  width: 80%;
+  margin: auto;
+}
+/* header section  */
+header {
+  background-color: var(--g);
+  width: 100vw;
+  height: 86px;
+  position: relative;
+  z-index: 50;
+}
+.headerContiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.logo img {
+  width: 157px;
+  height: 54px;
+  mix-blend-mode: multiply;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  padding: 8px 28px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--w);
+}
+ul li a.active {
+  background: #0000000f;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.3);
+  border-radius: 1px;
+}
+.contact {
+  color: var(--w);
+  text-align: right;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 18px;
+}
+.contact h3 {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.94px;
+}
+
+/* hero section */
+main {
+  width: 100vw;
+  height: 650px;
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+main::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.36);
+  z-index: 2;
+}
+main > * {
+  position: relative;
+  z-index: 3;
+}
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 333px;
+  height: 25px;
+  color: var(--w);
+}
+.mainContiner {
+  padding-top: 80px;
+}
+.longBar {
+  width: 220px;
+  border: 3.75px solid #575757;
+  height: 0;
+  position: relative;
+}
+.shortBar {
+  width: 89px;
+  border: 3.75px solid var(--w);
+  height: 0;
+  position: absolute;
+  top: -3.75px;
+  left: -3.75px;
+}
+.progress p {
+  font-weight: 400;
+  font-size: 18px;
+}
+.minText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 70px;
+  width: 95%;
+  max-width: 729px;
+}
+.minText h2 {
+  font-weight: 600;
+  font-size: 52px;
+  color: var(--w);
+}
+.minText p {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--w);
+  line-height: 30px;
+}
+.mainButton {
+  display: flex;
+  gap: 24px;
+  width: 95%;
+  max-width: 405px;
+}
+.mainButton .but {
+  text-align: center;
+  height: 41px;
+  padding: 12px 34px;
+  border-radius: 109px;
+  letter-spacing: 8%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mainButton .but.button1 {
+  background-color: var(--g);
+  color: var(--w);
+  width: 173px;
+}
+.mainButton .button2 {
+  background-color: var(--o);
+  color: var(--h);
+  width: 208px;
+}
+
+/* about secton  */
+.about {
+  width: 100vw;
+  height: 100vh;
+}
+/* ===============rspossive================= */
+
+/*  xl screan  */
+@media (max-width: 1200px) {
+  /* global */
+  .continer {
+    width: 90%;
+  }
+  /* header */
+  nav ul {
+    gap: 3px;
+  }
+}
+
+/* lg screan  */
+@media (max-width: 1024px) {
+  /* header */
+  nav ul {
+    display: none;
+  }
+}
+
+/* md screan */
+@media (max-width: 800px) {
+  .progress {
+    width: 280px;
+  }
+  .longBar {
+    width: 180px;
+  }
+  .minText {
+    margin-top: 60px;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}
+/* sm screan  */
+
+@media (max-width: 640px) {
+  /* global */
+  .continer {
+    width: 90%;
+  }
+
+  /* header */
+  header {
+    height: 70px;
+  }
+  .logo img {
+    width: 127px;
+    height: 44px;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+  .contact h3 {
+    font-size: 19px;
+    letter-spacing: 0.8px;
+  }
+  .minText {
+    h2 {
+      font-size: 50px;
+    }
+  }
+  .mainButton .but {
+    padding: 12px 15px;
+  }
+}
+
+/* xs */
+@media (max-width: 640px) {
+}
