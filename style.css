@@ -273,6 +273,53 @@ main > * {
 
 /*  contact secton  */
 .contactSection {
+  margin-top: 60px;
+  width: 100vw;
+  height: auto;
+  min-height: 70vh;
+  background-image: url(./images/contact.png);
+  background-size: cover;
+  background-position: center;
+  .contactContiner {
+    display: flex;
+    margin-left: 10%;
+    color: var(--w);
+    justify-items: center;
+    max-width: 700px;
+    height: 100%;
+    .div1 {
+      flex-direction: column;
+      display: flex;
+      height: 212px;
+      width: 100%;
+      gap: 35px;
+      padding-top: 150px;
+
+      h2 {
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: -2%;
+        width: 100%;
+      }
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+      }
+      div {
+        color: var(--h);
+        background-color: var(--o);
+        width: 175px;
+        height: 41px;
+        padding: 12px 34px;
+        border-radius: 109px;
+      }
+    }
+  }
+}
+
+/* sloler Kits section  */
+.slolerKits {
   width: 100vw;
   height: auto;
   min-height: 100vh;
@@ -325,6 +372,12 @@ main > * {
   nav ul {
     display: none;
   }
+  /* contact section */
+  .contactContiner {
+    .div1 {
+      padding-top: 110px !important;
+    }
+  }
 }
 
 /* md screan */
@@ -344,6 +397,13 @@ main > * {
       font-size: 17px;
       line-height: 20px;
       font-weight: 400;
+    }
+  }
+
+  /* contact section */
+  .contactContiner {
+    .div1 {
+      padding-top: 80px !important;
     }
   }
 }
@@ -408,6 +468,12 @@ main > * {
     }
     div p {
       font-size: 13px !important;
+    }
+  }
+  /* contact section */
+  .contactContiner {
+    .div1 {
+      padding-top: 50px !important;
     }
   }
 }
