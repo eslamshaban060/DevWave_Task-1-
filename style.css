@@ -562,6 +562,69 @@ main > * {
   }
 }
 
+/* values-section */
+.values-section {
+  padding: 60px 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .values-header {
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    h2 {
+      font-weight: 600;
+      font-size: 42px;
+      letter-spacing: -2%;
+      color: var(--h);
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #475467;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 32px;
+    .card {
+      min-height: 420px;
+      border-radius: 12px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #3cab90;
+      padding: 32px;
+      background-color: #3cab900d;
+      i {
+        font-size: 70px;
+        color: #0e6752;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--h);
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2a3334;
+      }
+    }
+  }
+}
+
 /* ===============rspossive================= */
 
 /* xxl */
@@ -672,6 +735,11 @@ main > * {
         font-size: 16px !important;
       }
     }
+  }
+
+  /* values section  */
+  .values-header {
+    margin-bottom: 0px;
   }
 }
 /* sm screan  */
