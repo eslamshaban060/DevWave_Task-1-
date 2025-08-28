@@ -1,6 +1,6 @@
 # 🌐 Landing Page – Task 1
 
-This is the **Landing Page** I built as part of **Task 1** from the **DevWave Training – Round 1**.  
+This is the **Landing Page** I built as part of **Task 1** from the **DevWave Training**.  
 The original design was created in **Figma**, and my task was to **convert it into clean, responsive code** using **HTML and CSS**.
 
 ---
